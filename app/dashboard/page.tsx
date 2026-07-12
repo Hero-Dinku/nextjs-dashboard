@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   title: 'Dashboard',
 };
 
+export const dynamic = 'force-dynamic';
+
 async function RevenueChartWrapper() {
   const revenue = await fetchRevenue();
   return <RevenueChart revenue={revenue} />;
@@ -47,3 +49,4 @@ export default async function Page() {
     </main>
   );
 }
+
